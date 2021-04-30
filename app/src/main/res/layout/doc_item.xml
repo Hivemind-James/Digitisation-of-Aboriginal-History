@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardBackgroundColor="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/textIDTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/id"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorText" />
+
+
+        <TextView
+            android:id="@+id/textID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/textIDTitle"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textWelcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textID"
+            android:layout_alignParentStart="true"
+            android:text="@string/welcome"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/textWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/textWelcomeTitle"
+            android:layout_toEndOf="@id/textWelcomeTitle"
+
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textAckTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textWelcome"
+            android:layout_alignParentStart="true"
+            android:text="@string/acknowledgements"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/textAck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textAckTitle"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textHistoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textAck"
+            android:layout_alignParentStart="true"
+            android:text="@string/History"
+            android:textColor="@color/colorText" />
+
+        <TextView
+            android:id="@+id/textHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textHistoryTitle"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textEldersTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textHistory"
+            android:textColor="@color/colorText"
+            android:text="@string/elders" />
+
+        <TextView
+            android:id="@+id/textElders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textEldersTitle"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textRAPTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/textElders"
+            android:textColor="@color/colorText"
+            android:text="@string/registered_aboriginal_party" />
+
+        <TextView
+            android:id="@+id/textRAP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textRAPTitle"
+            android:layout_alignParentStart="true"
+            android:textColor="#FFFFFF" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

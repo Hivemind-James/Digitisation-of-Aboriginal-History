@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".EditDocActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/idTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_id"
+                android:fontFamily="@font/convergence"
+                android:gravity="start"
+                android:padding="15dp"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/editID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/id_hint"
+                android:inputType="textMultiLine"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8C8266"
+                app:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/welcomeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_welcome_message"
+                android:fontFamily="@font/convergence"
+                android:gravity="start"
+                android:padding="15dp"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/editWelcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/welcome_hint"
+                android:inputType="textMultiLine"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8C8266"
+                app:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/ackTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_acknowledgments"
+                android:fontFamily="@font/convergence"
+                android:gravity="start"
+                android:padding="15dp"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/editAck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/ack_hint"
+                android:inputType="textMultiLine"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8C8266"
+                app:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/historyTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nation_history"
+                android:fontFamily="@font/convergence"
+                android:gravity="start"
+                android:padding="15dp"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/editHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/history"
+                android:inputType="textMultiLine"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8C8266"
+                app:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/eldersTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/elders"
+                android:fontFamily="@font/convergence"
+                android:gravity="start"
+                android:padding="15dp"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/editElders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/elders_"
+                android:inputType="textMultiLine"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8C8266"
+                app:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/rapTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registered_aboriginal_party"
+                android:fontFamily="@font/convergence"
+                android:gravity="start"
+                android:padding="15dp"
+                android:textColor="@color/colorText"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/editRAP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/registered_aboriginal_party_"
+                android:inputType="textMultiLine"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8C8266"
+                app:backgroundTint="@color/colorAccent" />
+        </LinearLayout>
+</ScrollView>

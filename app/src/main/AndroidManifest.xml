@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.doaha">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".application.DoAHAApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminRecycler"
+            android:launchMode="singleTop"/>
+        <activity
+            android:name=".AdminSearchResult"
+            android:parentActivityName=".AdminRecycler" />
+        <activity
+            android:name=".EditDocActivity"
+            android:parentActivityName=".AdminRecycler"
+            android:theme="@style/AdminTheme" />
+        <activity
+            android:name=".NewDocActivity"
+            android:parentActivityName=".AdminRecycler"
+            android:theme="@style/AdminTheme" />
+        <activity
+            android:name=".AdminModifyImageActivity"
+            android:theme="@style/AdminTheme"
+            android:parentActivityName=".AdminImageActivity" />
+        <activity
+            android:name=".UploadImageActivity"
+            android:parentActivityName=".AdminImageActivity"
+            android:theme="@style/AdminTheme"/>
+        <activity android:name=".AdminImageActivity"
+            android:theme="@style/AdminTheme"/>
+        <activity android:name=".MapsActivity" />
+        <activity android:name=".MainListActivity" />
+        <activity android:name=".AdminLogin" />
+        <activity android:name=".AdminPage" />
+    </application>
+
+</manifest>
