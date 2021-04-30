@@ -19,7 +19,7 @@
           "client_type": 1,
           "android_info": {
             "package_name": "com.doaha",
-            "certificate_hash": "0ca431401c51a6d27c083e85dfbd44ca94928fb4"
+            "certificate_hash": ""
           }
         },
         {
@@ -27,7 +27,7 @@
           "client_type": 1,
           "android_info": {
             "package_name": "com.doaha",
-            "certificate_hash": "711d6ef0b84c66d6ed6a1e30d75f23a2682dada6"
+            "certificate_hash": ""
           }
         },
         {
@@ -37,7 +37,7 @@
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBowePMUt3PqB94viRU2y4aRWmd1wiSqcw"
+          "current_key": ""
         }
       ],
       "services": {
@@ -60,13 +60,13 @@
       },
       "oauth_client": [
         {
-          "client_id": "344250883168-kcja8bdckqm3tv9tr5haakk83vjcct8m.apps.googleusercontent.com",
+          "client_id": "",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBowePMUt3PqB94viRU2y4aRWmd1wiSqcw"
+          "current_key": ""
         }
       ],
       "services": {
